@@ -1,0 +1,15 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import {} from '../../assets'
+import './header.styles.scss';
+
+const Header = () => {
+    return (
+        <div className='header'>
+            <Link to='/'></Link>
+        </div>
+    );
+}
+
+export default Header;

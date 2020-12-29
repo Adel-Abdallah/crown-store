@@ -50,8 +50,8 @@ class App extends React.Component {
               this.props.currentUser ? (
                 <Redirect to='/' />
               ) : (
-                  <SignInAndSignUpPage />
-                )
+                <SignInAndSignUpPage />
+              )
             }
           />
         </Switch>
@@ -59,7 +59,7 @@ class App extends React.Component {
     );
   }
 }
-const mapStateToProps = ({ user }) => ({
+const mapstateToProps = ({ user }) => ({
   currentUser: user.currentUser,
 });
 
@@ -67,4 +67,4 @@ const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapstateToProps, mapDispatchToProps)(App);

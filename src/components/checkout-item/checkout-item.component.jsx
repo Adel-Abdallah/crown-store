@@ -10,12 +10,12 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
             <div className='image-container'>
                 <img src={imageUrl} alt='item' />
             </div>
-            <spn className='name'>{name}</spn>
-            <spn className='quantity'>
+            <span className='name'>{name}</span>
+            <span className='quantity'>
                 <div className="arrow" onClick={() => removeItem(cartItem)}>&#10094;</div>
                 <span className="value">{quantity}</span>
                 <div className="arrow" onClick={() => addItem(cartItem)}>&#10095;</div>
-            </spn>
+            </span>
             <span className='price'>{price}</span>
             <div className='remove-button' onClick={() => clearItem(cartItem)}>&#10005;</div>
         </div>
